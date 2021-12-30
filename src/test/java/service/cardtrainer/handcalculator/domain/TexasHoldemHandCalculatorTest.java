@@ -56,7 +56,9 @@ class TexasHoldemHandCalculatorTest
                 Arguments.of(new Card("9", "diamond"), new Card("6", "spade"), 16),
                 Arguments.of(new Card("9", "diamond"), new Card("5", "spade"), 14),
                 Arguments.of(new Card("9", "diamond"), new Card("9", "spade"), 28),
-                Arguments.of(new Card("a", "diamond"), new Card("a", "spade"), 42)
+                Arguments.of(new Card("a", "diamond"), new Card("a", "spade"), 42),
+                Arguments.of(new Card("9", "diamond"), new Card("q", "spade"), 23),
+                Arguments.of(new Card("q", "diamond"), new Card("9", "spade"), 23)
         );
     }
 
